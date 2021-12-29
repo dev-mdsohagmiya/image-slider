@@ -30,7 +30,7 @@ let rightSlide = () => {
     img.classList.remove("leftAnimate1");
    
     
-  }, 800);
+  }, 500);
   if (3 < imgLength) {
     imgLength = 0;
   }
@@ -53,7 +53,7 @@ let leftSlide = () => {
     img.src = imgArr[imgLength];
      img.classList.remove("rightAnimate1");
    
-  }, 800);
+  }, 500);
 
   if (imgLength < 0) {
     imgLength = imgArr.length - 1;
