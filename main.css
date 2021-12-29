@@ -1,0 +1,137 @@
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CSS */
+body {
+  background-color: #991b1b !important;
+}
+.boxContainer {
+  width: 60%;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #7f1d1d;
+  border-radius: 5px;
+}
+.boxMain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.boxMain .left {
+  position: absolute;
+  left: 2%;
+  top: 45%;
+  font-size: 30px;
+  color: #f87171;
+  cursor: pointer;
+}
+.boxMain .right {
+  position: absolute;
+  right: 2%;
+  top: 45%;
+  font-size: 30px;
+  color: #f87171;
+  cursor: pointer;
+}
+.boxMain .img {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  top: 10%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+
+  margin: auto;
+}
+.boxMain img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+.rightAnimate1 {
+  animation-duration: 1s;
+  animation-name: rightAnimate;
+}
+@keyframes rightAnimate {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translate(1000px);
+  }
+}
+.leftAnimate1 {
+  animation-duration: 1s;
+  animation-name: leftAnimate;
+}
+@keyframes leftAnimate {
+  from {
+    transform: translateX(auto);
+  }
+  to {
+    transform: translate(-1000px);
+  }
+}
+
+.addImg {
+  transform: translateX(-1000px) !important;
+  transition: 0.5s;
+}
+.img2 {
+  transform: translateX(1000px);
+  transition: 0.5s;
+}
+.addImg2 {
+  transform: translateX(0) !important;
+  transition: 0.5s;
+}
+.active ul li {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+
+
+
+}
+.active{
+ display: flex;
+ justify-content: center;
+  flex-direction: row;
+  margin-left: -8%;
+  margin-top: -30px;
+
+
+}
+@media only screen and (max-width: 567px) {
+    .boxContainer{
+        width: 90%;
+        height: 300px;
+    }
+    .active{
+        margin-top: -25px;
+    }
+
+  }
