@@ -26,8 +26,9 @@ let rightSlide = () => {
   // image change
   img.classList.add("leftAnimate1");
   setTimeout(() => {
+     img.src = imgArr[imgLength];
     img.classList.remove("leftAnimate1");
-    img.src = imgArr[imgLength];
+   
     
   }, 800);
   if (3 < imgLength) {
@@ -48,8 +49,9 @@ let leftSlide = () => {
   //   setTimeout(()=>activeIcons[imgLength-1].style.backgroundColor = "#ef4444",1)
 
   setTimeout(() => {
-     img.classList.remove("rightAnimate1");
+    
     img.src = imgArr[imgLength];
+     img.classList.remove("rightAnimate1");
    
   }, 800);
 
